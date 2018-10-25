@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+main {
+  font-size: 1.6rem;
+}
+
+/*
+#text {
+  width: 80%;
+  height: 15rem;
+}
+*/
+
+#count {
+  display: block;
+}

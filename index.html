@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <title>Word Counter</title>
+  </head>
+  <body>
+    <main>
+      <h1>Word Counter</h1>
+      <section>
+        <h4>Click to add one of these sample texts or enter your own</h4>
+        <ul>
+          <li>
+            <label for="declaration" class="sample-text">The Declaration of Independence</label>
+            <input id="declaration" type="button" value="Add">
+          </li>
+          <li>
+            <label for="gettysburg" class="sample-text">The Gettyburg Address</label>
+            <input id="gettysburg" type="button" value="Add">
+          </li>
+          <li>
+            <label for="cat-hat" class="sample-text">The Cat in the Hat</label>
+            <input id="cat-hat" type="button" value="Add">
+          </li>
+        </ul>
+        <textarea id="text" rows="12" cols="80" placeholder="Enter your text here"></textarea>
+        <input id="count" type="button" value="Count Words">
+      </section>
+      <section>
+        <h4>Words in the text and their number of appearances</h4>
+        <ul id="word-counts">
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
