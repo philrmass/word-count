@@ -11,6 +11,11 @@ main {
   display: block;
 }
 
+#word-counts li {
+  background-color: #fc8;
+}
+
 #word-counts span {
   font-weight: bold;
+  background-color: #cf8;
 }
