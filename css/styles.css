@@ -10,3 +10,7 @@ main {
 #count {
   display: block;
 }
+
+#word-counts span {
+  font-weight: bold;
+}
