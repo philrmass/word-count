@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
   let outputWords = document.getElementById("output-words");
   let outputCounts = document.getElementById("output-counts");
 
-  wordsText.value = "dog bird cat dog bird cat alligator dog dog dog bird bird cat cat bird dog";
   declaration.onclick = function() {
     wordsText.value = declarationText;
   };

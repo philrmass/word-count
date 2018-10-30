@@ -7,16 +7,50 @@ main {
   font-size: 1.6rem;
 }
 
-h4 {
+h1 {
   margin-bottom: 0.1em;
+  color: #606060;
+  font-size: 2em;
 }
 
-.texts li {
-  font-height: 0.9em;
+h4 {
+  margin-top: 0.8em;
+  margin-bottom: 0.1em;
+  color: #303030;
+  font-size: 1.0em;
+}
+
+input[type=button] {
+  padding: 0.15em 0.3em;
+  border: 1px solid #999;
+  border-radius: 0.2em;
+  background-color: #d8d8d8;
+}
+
+textarea {
+  margin-bottom: 0.5em;
+  border-radius: 0.2em;
+  background-color: #fcfcfc;
+}
+
+#samples {
+  padding-left: 0.6em;
+  font-size: 0.9em;
+  list-style-type: none;
+}
+
+#samples input {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 #count {
   display: block;
+  margin: 0.1em 0.6em;
+}
+
+#clear {
+  margin: 0.1em 0.6em;
 }
 
 #output {
