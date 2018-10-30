@@ -16,15 +16,20 @@ function countWords(counter, word) {
 
 
 function addWordCount(parent, word, count) {
-    let wordNode = document.createElement("li");
+    let listItem = document.createElement("li");
+    let wordSpan = document.createElement("span");
     let wordText = document.createTextNode(word);
-    let countNode = document.createElement("span");
-    let countText = document.createTextNode(" " + count);
+    let countSpan = document.createElement("span");
+    let countText = document.createTextNode(count);
 
-    wordNode.appendChild(wordText);
-    countNode.appendChild(countText);
-    wordNode.appendChild(countNode);
-    parent.appendChild(wordNode);
+    listItem.appendChild(wordSpan);
+    wordSpan.appendChild(wordText);
+    listItem.appendChild(countSpan);
+    countSpan.appendChild(countText);
+    parent.appendChild(listItem);
+
+    wordSpan.classList.add("words");
+    countSpan.classList.add("counts");
 }
 
 function displayWords(wordCounter) {
@@ -33,10 +38,12 @@ function displayWords(wordCounter) {
     return wordCounter[b] - wordCounter[a];
   })
 
+  let outputWords = document.getElementById("output-words");
   let outputCounts = document.getElementById("output-counts");
   outputCounts.innerHTML = "";
   words.forEach(function(word) {
     if(word) {
+      addWordCount(outputWords, word, wordCounter[word]);
       addWordCount(outputCounts, word, wordCounter[word]);
     }
   })
@@ -50,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let wordsText = document.getElementById("words-text");
   let count = document.getElementById("count");
   let clear = document.getElementById("clear");
+  let outputWords = document.getElementById("output-words");
   let outputCounts = document.getElementById("output-counts");
 
   wordsText.value = "dog bird cat dog bird cat alligator dog dog dog bird bird cat cat bird dog";
@@ -67,7 +75,8 @@ document.addEventListener("DOMContentLoaded", function() {
   };
   clear.onclick = function() {
     wordsText.value = "";
-    counts.innerHTML = "";
+    outputWords.innerHTML = "";
+    outputCounts.innerHTML = "";
   }
 
   count.onclick = function() {

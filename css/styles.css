@@ -7,51 +7,54 @@ main {
   font-size: 1.6rem;
 }
 
+h4 {
+  margin-bottom: 0.1em;
+}
+
+.texts li {
+  font-height: 0.9em;
+}
+
 #count {
   display: block;
 }
 
 #output {
   display: flex;
-  background-color: #fed;
+  font-size: 0.9em;
+}
+
+#output ul {
+  padding-left: 0.5em;
 }
 
 #output li {
+  padding: 0.1em 0;
   list-style-type: none;
 }
 
-#output-words {
-  background-color: #efd;
+#output li span {
+  padding: 0 0.2em;
+}
+
+#output-words .counts {
+  display: none;
 }
 
 #output-counts {
-  background-color: #edf;
   flex-grow: 1;
 }
 
-  /*
-.words-counts {
-  background-color: #ffe;
+#output-counts .words {
+  display: none;
 }
 
-.words-counts {
+.words {
+}
+
+.counts {
   display: inline-block;
+  width: 15%;
+  border-radius: 0.2em;
+  background-color: #94b9e8;
 }
-
-.words-counts li {
-}
-
-.words-counts span {
-  position: absolute;
-  display: inline-block;
-  left: 10%;
-  width: 25%;
-  border: 1px solid #08f;
-  background-color: #8cf;
-  font-weight: bold;
-}
-
-#counts {
-  display: block;
-}
-*/
