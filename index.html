@@ -27,6 +27,10 @@
             <label for="cat-hat" class="sample-text">The Cat in the Hat</label>
             <input id="cat-hat" type="button" value="Add">
           </li>
+          <li>
+            <label for="tell-tale" class="sample-text">The Tell-Tale Heart</label>
+            <input id="tell-tale" type="button" value="Add">
+          </li>
         </ul>
         <textarea id="words-text" rows="12" cols="80" placeholder="Enter your text here"></textarea>
         <input id="count" type="button" value="Count Words">
@@ -34,8 +38,16 @@
       </section>
       <section>
         <h4>Words in the text and their number of appearances</h4>
-        <ul id="word-counts">
-        </ul>
+        <div id="words-counts">
+          <ul id="words" class="words-counts">
+            <li>dog<span> 6</span></li>
+            <li>bird<span> 5</span></li>
+            <li>cat<span> 4</span></li>
+            <li>alligator<span> 1</span></li>
+          </ul>
+          <ul id="counts" class="words-counts">
+          </ul>
+        </div>
       </section>
     </main>
   </body>
