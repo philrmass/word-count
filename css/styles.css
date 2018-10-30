@@ -11,27 +11,41 @@ main {
   display: block;
 }
 
+#output {
+  display: flex;
+  background-color: #fed;
+}
+
+#output li {
+  list-style-type: none;
+}
+
+#output-words {
+  background-color: #efd;
+}
+
+#output-counts {
+  background-color: #edf;
+  flex-grow: 1;
+}
+
+  /*
 .words-counts {
   background-color: #ffe;
 }
 
 .words-counts {
-  /*
   display: inline-block;
-  */
 }
 
 .words-counts li {
-  list-style-type: none;
 }
 
 .words-counts span {
-  /*
   position: absolute;
   display: inline-block;
   left: 10%;
   width: 25%;
-  */
   border: 1px solid #08f;
   background-color: #8cf;
   font-weight: bold;
@@ -40,3 +54,4 @@ main {
 #counts {
   display: block;
 }
+*/

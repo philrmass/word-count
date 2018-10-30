@@ -33,11 +33,11 @@ function displayWords(wordCounter) {
     return wordCounter[b] - wordCounter[a];
   })
 
-  let wordCounts = document.getElementById("counts");
-  wordCounts.innerHTML = "";
+  let outputCounts = document.getElementById("output-counts");
+  outputCounts.innerHTML = "";
   words.forEach(function(word) {
     if(word) {
-      addWordCount(wordCounts, word, wordCounter[word]);
+      addWordCount(outputCounts, word, wordCounter[word]);
     }
   })
 }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let wordsText = document.getElementById("words-text");
   let count = document.getElementById("count");
   let clear = document.getElementById("clear");
-  let counts = document.getElementById("counts");
+  let outputCounts = document.getElementById("output-counts");
 
   wordsText.value = "dog bird cat dog bird cat alligator dog dog dog bird bird cat cat bird dog";
   declaration.onclick = function() {
