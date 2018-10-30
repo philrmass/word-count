@@ -50,11 +50,13 @@ h4 {
 }
 
 .words {
+  display: block;
+  border-radius: 0.2em;
+  background-color: #f6f6f6;
 }
 
 .counts {
   display: inline-block;
-  width: 15%;
   border-radius: 0.2em;
   background-color: #94b9e8;
 }

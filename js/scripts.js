@@ -15,7 +15,7 @@ function countWords(counter, word) {
 };
 
 
-function addWordCount(parent, word, count) {
+function addWordCount(parent, word, count, countMax) {
     let listItem = document.createElement("li");
     let wordSpan = document.createElement("span");
     let wordText = document.createTextNode(word);
@@ -28,8 +28,11 @@ function addWordCount(parent, word, count) {
     countSpan.appendChild(countText);
     parent.appendChild(listItem);
 
+    const maxPercentage = 98;
+    const ratio = (maxPercentage * (count / countMax)).toFixed(1);
     wordSpan.classList.add("words");
     countSpan.classList.add("counts");
+    countSpan.style.width = ratio + "%";
 }
 
 function displayWords(wordCounter) {
@@ -38,13 +41,15 @@ function displayWords(wordCounter) {
     return wordCounter[b] - wordCounter[a];
   })
 
+  let countMax = words.length && wordCounter[words[0]];
   let outputWords = document.getElementById("output-words");
   let outputCounts = document.getElementById("output-counts");
+  outputWords.innerHTML = "";
   outputCounts.innerHTML = "";
   words.forEach(function(word) {
     if(word) {
-      addWordCount(outputWords, word, wordCounter[word]);
-      addWordCount(outputCounts, word, wordCounter[word]);
+      addWordCount(outputWords, word, wordCounter[word], countMax);
+      addWordCount(outputCounts, word, wordCounter[word], countMax);
     }
   })
 }
