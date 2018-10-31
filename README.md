@@ -6,11 +6,11 @@
 
 ## Description
 
-_This was created as a test of using the reduce function to count word frequencies. It includes some sample texts that you can add with a click or you can cut and paste in any other text. You can see the deployed version [here](https://philrmass.github.io/word-counter/)._
+_This was created as a test of using the reduce function to count word frequencies. It includes some sample texts that you can add with a click or you can cut and paste in any other text. You can see the deployed version [here](https://philrmass.github.io/word-count/)._
 
 ## Setup And Installation
 
-* Clone the project from https://github.com/philrmass/word-counter.git to a local directory
+* Clone the project from https://github.com/philrmass/word-count.git to a local directory
 * Open index.html in a browser
 
 ## Known Bugs
