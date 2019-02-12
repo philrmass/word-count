@@ -1,12 +1,14 @@
 # Word Counter
 
-##### _Counts the frequency of words in any text_
-
 #### By **Phil Mass**
 
 ## Description
 
-_This was created as a test of using the reduce function to count word frequencies. It includes some sample texts that you can add with a click or you can cut and paste in any other text. You can see the deployed version [here](https://philrmass.github.io/word-count/)._
+_This was created as a test of using the reduce function to count word frequencies. It includes some sample texts that you can add with a click or you can paste in any other text._
+
+_You can see the deployed version [here](https://philrmass.github.io/word-count/)._
+
+![Screenshot](img/screenshot.png)
 
 ## Setup And Installation
 
